@@ -1,4 +1,5 @@
 import unittest
+
 class Calculator:
     def add(self, x, y):
         return x + y
@@ -31,5 +32,5 @@ class CalculatorTest(unittest.TestCase):
     def test_divide(self):
         self.assertEqual(3, self.calc.divide(6, 2), "Division is wrong")
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     unittest.main()
